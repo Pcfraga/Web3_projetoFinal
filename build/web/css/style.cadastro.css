@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f5f5f5;
+    background: url('../img/logo.png') no-repeat center center fixed;
+background-size: cover;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+
+.titulo {
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+/* Estilo da mensagem */
+
+.mensagem {
+    color: white; /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Afasta o texto do formulário */
+    font-size: 30px; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    
+}
+
+
+/* Estilizando o formulário */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Container dos botões */
+#botoes {
+    display: flex;
+    flex-direction: column; /* Botões um abaixo do outro */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 15px;
+}
+
+/* Botão de Enviar */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Botão de cancelar como link */
+.botao-cancelar {
+    background-color: #d9534f;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.botao-cancelar:hover {
+    background-color: #c9302c;
+}
